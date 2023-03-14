@@ -16,20 +16,18 @@ public class Radio {
         }
         numberOfStation = newNumberOfStation;
     }
-    public void NextStationButton() {
+    public void nextStationButton() {
         if (numberOfStation < 9) {
             numberOfStation = numberOfStation + 1;
-        }
-        if (numberOfStation >= 9) {
+        } else {
             numberOfStation = 0;
         }
     }
 
-    public void PrevStationButton() {
+    public void prevStationButton() {
         if (numberOfStation > 0) {
             numberOfStation = numberOfStation - 1;
-        }
-        if (numberOfStation <= 0) {
+        } else  {
             numberOfStation = 9;
         }
     }
